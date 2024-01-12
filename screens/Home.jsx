@@ -3,7 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import styles from './home.style'
 import { Ionicons, Fontisto } from '@expo/vector-icons'
-import { Welcome } from '../components'
+import { Welcome, Carousel } from '../components/index'
 
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
       {/* Need scroll view to show the body of the screen. */}
       <ScrollView>
         <Welcome/>
-
+        <Carousel/>
       </ScrollView>
 
     </SafeAreaView>

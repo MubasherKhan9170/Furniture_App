@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import React from "react";
-import styles from "./welcome.style";
-import { COLORS, SIZES } from "../constants";
+import styles from "../home/welcome.style";
+import { COLORS, SIZES } from "../../constants";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -33,6 +33,7 @@ const Welcome = () => {
             placeholder="What are you looking for"
           />
         </View>
+        <View>
         <TouchableOpacity style={styles.searchBtn}>
           <Ionicons
             name="camera-outline"
@@ -40,6 +41,7 @@ const Welcome = () => {
             color={COLORS.offwhite}
           />
         </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
