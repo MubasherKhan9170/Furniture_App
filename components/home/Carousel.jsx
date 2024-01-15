@@ -15,11 +15,13 @@ const Carousel = () => {
         images={slides}
         dotColor={COLORS.primary}
         inactiveDotColor={COLORS.secondary}
-        ImageCocomponentStyle={{
+        ImageComponentStyle={{
           borderRadius: 15,
           width: "95%",
           marginTop: 15,
         }}
+        autoplay
+        circleLoop
       />
     </View>
   );
